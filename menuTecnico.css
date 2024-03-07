@@ -1,0 +1,251 @@
+
+body {
+    background: #F6F4EC;
+    margin-bottom: 100px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgba(228,120,62,1) 0%,
+        rgba(239,186,137,1) 70%
+        );
+}
+
+.menu{
+    position:absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    cursor: pointer;
+    height: 50px;
+
+
+}
+
+.logo .img{
+    transition: 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float:left;
+}
+
+
+.regresar img{
+    cursor: pointer;
+    height: 25px;
+}
+
+.regresar .img{
+    transition: 0.3s;
+}
+
+header .regresar img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: white;
+    ;
+}
+
+#menu{
+    display: none;
+
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+h1{
+    margin: 80px 0 0 350px;
+    color: white;
+
+}
+
+@media(max-width:991px){
+
+    .content{
+        min-height: 70px;
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(228,120,62,1) 0%,
+            rgba(239,186,137,1) 70%
+            );
+        display: none;
+    }
+
+    .menu.navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+}
+
+
+.checks{
+    margin: auto;
+    height: 530px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 75px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tanque bcid bcij riser valvula" "piv manguera siamesa hidrante tablero";
+}
+
+.tanque, .bcid, .bcij, .riser, .valvula, .piv, .manguera, .siamesa, .hidrante, .tablero {
+    background-color: #ff914d;
+    margin: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #FF914D;
+    box-shadow: 5px 5px 6px #dadada,
+        -5px -5px 6px #f6f6f6;
+    transition: 0.4s;
+
+}
+
+
+.tablero:hover {
+    translate: 0 -10px;
+}
+.tanque:hover{
+    translate: 0 -10px;
+}
+.bcid:hover{
+    translate: 0 -10px
+}
+.bcij:hover{
+    translate: 0 -10px
+}
+.riser:hover{
+    translate: 0 -10px
+}
+.piv:hover{
+    translate: 0 -10px
+}
+.manguera:hover{
+    translate: 0 -10px
+}
+.siamesa:hover{
+    translate: 0 -10px
+}
+.hidrante:hover{
+    translate: 0 -10px
+}
+.valvula:hover{
+    translate: 0 -10px;
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 15px 0 0 10px;
+}
+
+.card-image {
+
+    min-height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 10px #c3c3c3,
+        inset -8px -8px 10px #cfcfcf;
+    text-align: center;
+}
+
+.card-image img{
+    max-width: 70%;
+    max-height: 70%;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+.card-body {
+    margin: 13px 0 0 10px;
+    color: rgb(31, 31, 31);
+    font-size: 15px;
+}
+

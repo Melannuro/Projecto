@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #ffffff
+}
+
+.titulo{
+    height: 115px;
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logoo nombree"
+}
+.logo{
+    height: 90px;
+    width: 150px;
+    padding: 15px;
+    grid-area: logoo;
+    justify-self: right;
+}
+.logoimg{
+    margin-left: 65px;
+    align-content: center
+}
+.nombre{
+    color: #3d405b;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 70px;
+    font-family: monospace;
+    grid-area: nombree;
+}
+
+.sesiones{
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    height: 545px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cliente empresa" "supervisor tecnico";
+}
+
+.cliente{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-right: 5%;
+    grid-area: cliente;
+    background-color: #ff914d;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "clienteimg clientetxt"
+}
+.clienteimg{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    grid-area: clienteimg;
+    justify-content: right;
+}
+.imgcliente{
+    align-content: center;
+    width: 60%;
+    height: 60%;
+}
+.clientetxt{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "txtcliente" "btncliente"
+}
+.txtcliente{
+    color: #262A29;
+    padding: 15px;
+}
+.btncliente{
+    justify-content: right;
+    justify-items: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "button"
+}
+
+.empresa{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    grid-area: empresa;
+    background-color: #ff914d;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "empresaimg empresatxt"
+}
+.empresaimg{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    grid-area: empresaimg;
+    justify-content: right;
+}
+.imgempresa{
+    align-content: center;
+    width: 60%;
+    height: 60%;
+}
+.empresatxt{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "txtempresa" "btnempresa"
+}
+.txtempresa{
+    color: #262A29;
+    padding: 15px;
+}
+.btnempresa{
+    justify-content: right;
+    justify-items: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "button"
+}
+
+.supervisor{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-right: 5%;
+    grid-area: supervisor;
+    background-color: #ff914d;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "supervisorimg supervisortxt"
+}
+.supervisorimg{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    grid-area: supervisorimg;
+    justify-content: right;
+}
+.imgsupervisor{
+    align-content: center;
+    width: 60%;
+    height: 60%;
+}
+.supervisortxt{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "txtsupervisor" "btnsupervisor"
+}
+.txtsupervisor{
+    color: #262A29;
+    padding: 15px;
+}
+.btnsupervisor{
+    justify-content: right;
+    justify-items: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "button"
+}
+
+.tecnico{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    grid-area: tecnico;
+    background-color: #ff914d;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "tecnicoimg tecnicotxt"
+}
+.tecnicoimg{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    grid-area: tecnicoimg;
+    justify-content: right;
+}
+.imgtecnico{
+    align-content: center;
+    width: 60%;
+    height: 60%;
+}
+.tecnicotxt{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "txttecnico" "btntecnico"
+}
+.txttecnico{
+    color: #262A29;
+    padding: 15px;
+}
+.btntecnico{
+    justify-content: right;
+    justify-items: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "button"
+}
+
+h1{
+    font-size: 35px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+h2{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+button {
+ display: inline-block;
+ border-radius: 50px;
+ background-color: #3d405b;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 13px;
+ width: 150px;
+ height: 50px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 10px;
+ grid-area: button;
+}
+
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+button:hover span {
+ padding-right: 15px;
+}
+
+button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
